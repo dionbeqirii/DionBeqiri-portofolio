@@ -4,18 +4,20 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import Image from "next/image";
 import { User, MapPin, GraduationCap, Briefcase } from "lucide-react";
-
-const stats = [
-  { label: "Years Experience", value: "3+", icon: Briefcase },
-  { label: "Projects Shipped", value: "10+", icon: User },
-  { label: "ERP Customizations", value: "50+", icon: GraduationCap },
-  { label: "Location", value: "Kosovo", icon: MapPin },
-];
+import { useLanguage } from "@/context/LanguageContext";
 
 export default function About() {
+  const { t } = useLanguage();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-80px" });
   const [imgError, setImgError] = useState(false);
+
+  const stats = [
+    { label: t.about.stats.experience, value: "3+" },
+    { label: t.about.stats.projects, value: "10+" },
+    { label: t.about.stats.erp, value: "50+" },
+    { label: t.about.stats.location, value: "Kosovo" },
+  ];
 
   return (
     <section id="about" className="relative section-padding">
@@ -29,7 +31,7 @@ export default function About() {
           className="flex items-center gap-4 mb-16"
         >
           <span className="text-sm font-mono text-emerald-400 tracking-widest uppercase">
-            01 / About
+            {t.about.sectionTag}
           </span>
           <div className="flex-1 h-px bg-gradient-to-r from-emerald-500/30 to-transparent" />
         </motion.div>
@@ -43,12 +45,8 @@ export default function About() {
             className="relative flex justify-center lg:justify-start"
           >
             <div className="relative group">
-              {/* Glow ring */}
               <div className="absolute -inset-1 rounded-2xl bg-gradient-to-br from-emerald-500 to-cyan-500 opacity-20 blur-md group-hover:opacity-35 transition-opacity duration-500" />
-
-              {/* Image container */}
               <div className="relative w-72 h-80 sm:w-80 sm:h-96 rounded-2xl overflow-hidden border border-slate-700/60 shadow-2xl shadow-black/40">
-                {/* Fallback — shown only when image fails or while loading */}
                 {imgError && (
                   <div className="absolute inset-0 bg-gradient-to-br from-slate-800 via-slate-900 to-[#0a0f1e] flex items-center justify-center z-0">
                     <div className="text-center">
@@ -70,7 +68,6 @@ export default function About() {
                 />
               </div>
 
-              {/* Floating badge */}
               <motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
@@ -79,9 +76,7 @@ export default function About() {
               >
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
-                  <span className="text-sm font-semibold text-white">
-                    Open to work
-                  </span>
+                  <span className="text-sm font-semibold text-white">{t.about.openToWork}</span>
                 </div>
               </motion.div>
             </div>
@@ -94,42 +89,16 @@ export default function About() {
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
           >
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight">
-              A Developer Who{" "}
-              <span className="text-gradient">Thinks in Systems</span>
+              {t.about.title}{" "}
+              <span className="text-gradient">{t.about.titleAccent}</span>
             </h2>
 
             <div className="space-y-4 text-slate-400 text-base leading-relaxed mb-8">
-              <p>
-                I am a full-stack Software Developer with over{" "}
-                <span className="text-emerald-400 font-medium">
-                  3 years of specialized experience
-                </span>{" "}
-                in NetSuite technical consulting. Currently completing my
-                Bachelor&apos;s degree in Computer Science and Engineering at
-                the University of Mitrovica, I thrive on solving complex
-                technical and business logic challenges.
-              </p>
-              <p>
-                Whether architecting advanced NetSuite workflows, customizing
-                mission-critical business templates, or engineering modern web
-                platforms with{" "}
-                <span className="text-slate-300 font-medium">
-                  React and Python
-                </span>
-                , my focus is always on speed, performance, and delivering real
-                value.
-              </p>
-              <p>
-                I specialize in NetSuite&apos;s full development ecosystem and
-                integrating external platforms seamlessly via{" "}
-                <span className="text-emerald-400 font-medium">
-                  secure REST APIs
-                </span>
-                .
-              </p>
+              <p>{t.about.bio1}</p>
+              <p>{t.about.bio2}</p>
+              <p>{t.about.bio3}</p>
             </div>
 
-            {/* Stats grid */}
             <div className="grid grid-cols-2 gap-3">
               {stats.map((stat, i) => (
                 <motion.div
@@ -137,14 +106,10 @@ export default function About() {
                   initial={{ opacity: 0, y: 16 }}
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ delay: 0.3 + i * 0.08, duration: 0.5 }}
-                  className="group p-4 rounded-xl bg-slate-900/60 border border-slate-800/60 hover:border-emerald-500/30 hover:bg-slate-800/40 transition-all duration-300 card-glow"
+                  className="p-4 rounded-xl bg-slate-900/60 border border-slate-800/60 hover:border-emerald-500/30 hover:bg-slate-800/40 transition-all duration-300 card-glow"
                 >
-                  <div className="text-2xl font-bold text-gradient mb-1">
-                    {stat.value}
-                  </div>
-                  <div className="text-xs text-slate-500 font-medium">
-                    {stat.label}
-                  </div>
+                  <div className="text-2xl font-bold text-gradient mb-1">{stat.value}</div>
+                  <div className="text-xs text-slate-500 font-medium">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
