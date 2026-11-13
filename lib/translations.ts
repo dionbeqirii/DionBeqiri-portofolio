@@ -58,7 +58,7 @@ const translations: Record<Language, Translations> = {
       sectionTag: "01 / About",
       title: "A Developer Who", titleAccent: "Thinks in Systems",
       openToWork: "Open to work",
-      bio1: "I am a full-stack Software Developer with over 3 years of specialized experience in NetSuite technical consulting. Currently completing my Bachelor's degree in Computer Science and Engineering at the University of Mitrovica, I thrive on solving complex technical and business logic challenges.",
+      bio1: "I am a full-stack Software Developer with over 3 years of experience in NetSuite technical consulting. Having completed my Bachelor's degree in Computer Science and Engineering at the University of Mitrovica “Isa Boletini”, I thrive on solving complex technical and business logic challenges.",
       bio2: "Whether architecting advanced NetSuite workflows, customizing mission-critical business templates, or engineering modern web platforms with React and Python, my focus is always on speed, performance, and delivering real value.",
       bio3: "I specialize in NetSuite's full development ecosystem and integrating external platforms seamlessly via secure REST APIs.",
       stats: { experience: "Years Experience", projects: "Projects Shipped", erp: "ERP Customizations", location: "Location" },
@@ -94,10 +94,10 @@ const translations: Record<Language, Translations> = {
     education: {
       sectionTag: "05 / Education", title: "Education &", titleAccent: "Certifications",
       subtitle: "Academic foundation combined with industry-recognized certifications that back every technical decision.",
-      enrolled: "Currently Enrolled", certified: "Oracle Certified",
+      enrolled: "Graduated", certified: "Oracle Certified",
       degree: {
         title: "Bachelor of Science", subtitle: "Computer Science & Engineering",
-        institution: "University of Mitrovica", year: "2021 – Present",
+        institution: "University of Mitrovica “Isa Boletini”", year: "",
         description: "Comprehensive study of software engineering principles, algorithms, data structures, computer architecture, and modern programming paradigms. Applying academic knowledge directly to real-world consulting projects.",
       },
       cert: {
@@ -132,7 +132,7 @@ const translations: Record<Language, Translations> = {
       sectionTag: "01 / Über mich",
       title: "Ein Entwickler, der in", titleAccent: "Systemen denkt",
       openToWork: "Offen für Stellen",
-      bio1: "Ich bin ein Full-Stack-Softwareentwickler mit über 3 Jahren spezialisierter Erfahrung in der technischen NetSuite-Beratung. Derzeit schließe ich meinen Bachelor in Informatik und Ingenieurwesen an der Universität Mitrovica ab und löse leidenschaftlich komplexe technische und geschäftliche Herausforderungen.",
+      bio1: "Ich bin ein Full-Stack-Softwareentwickler mit über 3 Jahren Erfahrung in der technischen NetSuite-Beratung. Nach dem Abschluss meines Bachelors in Informatik und Ingenieurwesen an der Universität Mitrovica „Isa Boletini“ löse ich leidenschaftlich komplexe technische und geschäftliche Herausforderungen.",
       bio2: "Ob ich fortgeschrittene NetSuite-Workflows entwickle, geschäftskritische Vorlagen anpasse oder moderne Webplattformen mit React und Python entwickle – mein Fokus liegt stets auf Geschwindigkeit, Performance und echtem Mehrwert.",
       bio3: "Ich bin auf das vollständige NetSuite-Entwicklungs-Ökosystem spezialisiert und integriere externe Plattformen nahtlos über sichere REST-APIs.",
       stats: { experience: "Jahre Erfahrung", projects: "Abgeschlossene Projekte", erp: "ERP-Anpassungen", location: "Standort" },
@@ -168,10 +168,10 @@ const translations: Record<Language, Translations> = {
     education: {
       sectionTag: "05 / Ausbildung", title: "Ausbildung &", titleAccent: "Zertifizierungen",
       subtitle: "Akademische Grundlagen kombiniert mit branchenweit anerkannten Zertifizierungen, die jede technische Entscheidung unterstützen.",
-      enrolled: "Aktuell eingeschrieben", certified: "Oracle Zertifiziert",
+      enrolled: "Abgeschlossen", certified: "Oracle Zertifiziert",
       degree: {
         title: "Bachelor of Science", subtitle: "Informatik & Ingenieurwesen",
-        institution: "Universität Mitrovica", year: "2021 – Heute",
+        institution: "Universität Mitrovica „Isa Boletini“", year: "",
         description: "Umfassendes Studium der Softwareentwicklungsprinzipien, Algorithmen, Datenstrukturen, Computerarchitektur und moderner Programmierparadigmen.",
       },
       cert: {
@@ -206,7 +206,7 @@ const translations: Record<Language, Translations> = {
       sectionTag: "01 / Rreth meje",
       title: "Një Zhvillues që", titleAccent: "Mendon në Sisteme",
       openToWork: "I hapur për punë",
-      bio1: "Jam një Zhvillues Software full-stack me mbi 3 vjet përvojë të specializuar në konsulencën teknike NetSuite. Duke kompletuar aktualisht diplomën Bachelor në Shkencë Kompjuterike dhe Inxhinieri në Universitetin e Mitrovicës, jam i pasionuar pas zgjidhjes së sfidave komplekse teknike dhe logjikës së biznesit.",
+      bio1: "Jam një Zhvillues Software full-stack me mbi 3 vjet përvojë në konsulencën teknike NetSuite. Pasi kam përfunduar diplomën Bachelor në Shkencë Kompjuterike dhe Inxhinieri në Universitetin e Mitrovicës “Isa Boletini”, jam i pasionuar pas zgjidhjes së sfidave komplekse teknike dhe logjikës së biznesit.",
       bio2: "Nëse po arkitekturoj rrjedhat e avancuara të punës NetSuite, po personalizoj shablonet kritike të biznesit, ose po inxhinierizon platforma moderne ueb me React dhe Python, fokusi im është gjithmonë shpejtësia, performanca dhe ofrimi i vlerës reale.",
       bio3: "Jam i specializuar në ekosistemi i plotë i zhvillimit NetSuite dhe integrimin e platformave të jashtme pa probleme nëpërmjet REST API-ve të sigurta.",
       stats: { experience: "Vjet Përvojë", projects: "Projekte të Dorëzuara", erp: "Personalizime ERP", location: "Vendndodhja" },
@@ -242,10 +242,10 @@ const translations: Record<Language, Translations> = {
     education: {
       sectionTag: "05 / Arsimi", title: "Arsimi &", titleAccent: "Çertifikatat",
       subtitle: "Themeli akademik i kombinuar me çertifikime të njohura nga industria që mbështesin çdo vendim teknik.",
-      enrolled: "Aktualisht i Regjistruar", certified: "Çertifikuar nga Oracle",
+      enrolled: "I Diplomuar", certified: "Çertifikuar nga Oracle",
       degree: {
         title: "Bachelor i Shkencave", subtitle: "Shkencë Kompjuterike & Inxhinieri",
-        institution: "Universiteti i Mitrovicës", year: "2021 – Tani",
+        institution: "Universiteti i Mitrovicës “Isa Boletini”", year: "",
         description: "Studim gjithëpërfshirës i parimeve të inxhinierisë softuerike, algoritmeve, strukturave të të dhënave, arkitekturës kompjuterike dhe paradigmave moderne të programimit.",
       },
       cert: {

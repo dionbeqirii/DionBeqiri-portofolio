@@ -72,7 +72,7 @@ export default function About() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={isInView ? { opacity: 1, scale: 1 } : {}}
                 transition={{ delay: 0.5, duration: 0.5 }}
-                className="absolute -bottom-5 -right-5 bg-[#111827] border border-slate-700/60 rounded-xl px-4 py-3 shadow-xl"
+                className="absolute -bottom-5 -right-5 z-20 bg-[#111827] border border-slate-700/60 rounded-xl px-4 py-3 shadow-xl"
               >
                 <div className="flex items-center gap-2">
                   <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />

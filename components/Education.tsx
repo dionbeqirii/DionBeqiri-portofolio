@@ -121,8 +121,12 @@ export default function Education() {
                   <div className="flex items-center gap-2 mt-2">
                     <BookOpen size={13} className="text-slate-600" />
                     <span className="text-sm text-slate-500">{item.institution}</span>
-                    <span className="text-slate-700">·</span>
-                    <span className="text-xs font-mono text-slate-600">{item.year}</span>
+                    {item.year && (
+                      <>
+                        <span className="text-slate-700">·</span>
+                        <span className="text-xs font-mono text-slate-600">{item.year}</span>
+                      </>
+                    )}
                   </div>
                 </div>
 
