@@ -16,15 +16,6 @@ interface Project {
 
 const projects: Project[] = [
   {
-    titleKey: "AI Teacher Assistant",
-    descKey: "aiTeacher",
-    tags: ["Next.js", "Supabase", "OpenAI API"],
-    liveUrl: "https://ai-teacher-assistant-db.vercel.app/dashboard",
-    codeUrl: "https://github.com/dionbeqirii",
-    featured: true,
-    gradient: "from-emerald-900/60 via-teal-900/40 to-[#111827]",
-  },
-  {
     titleKey: "Glow By Diellza Studio",
     descKey: "glow",
     tags: ["Next.js", "React", "Tailwind CSS"],
@@ -32,6 +23,15 @@ const projects: Project[] = [
     codeUrl: "https://github.com/dionbeqirii",
     featured: true,
     gradient: "from-rose-900/50 via-pink-900/30 to-[#111827]",
+  },
+  {
+    titleKey: "AI Teacher Assistant",
+    descKey: "aiTeacher",
+    tags: ["Next.js", "Supabase", "OpenAI API"],
+    liveUrl: "https://ai-teacher-assistant-db.vercel.app/dashboard",
+    codeUrl: "https://github.com/dionbeqirii",
+    featured: true,
+    gradient: "from-emerald-900/60 via-teal-900/40 to-[#111827]",
   },
   {
     titleKey: "VibeMenu-Digital",
