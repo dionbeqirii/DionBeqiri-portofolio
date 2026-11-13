@@ -28,7 +28,7 @@ const projects: Project[] = [
     titleKey: "Glow By Diellza Studio",
     descKey: "glow",
     tags: ["Next.js", "React", "Tailwind CSS"],
-    liveUrl: "https://glowbydiellza.vercel.app/",
+    liveUrl: "https://glowbydiellza.com/",
     codeUrl: "https://github.com/dionbeqirii",
     featured: true,
     gradient: "from-rose-900/50 via-pink-900/30 to-[#111827]",
